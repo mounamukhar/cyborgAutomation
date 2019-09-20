@@ -1,1 +1,0 @@
-This is an open source test automation framework based on Cucumber

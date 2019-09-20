@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features={"src/test/java/com/qa/features"}
-,glue={"com/qa/stepdefinitions"}
+,glue={"com/qa/stepdefinitions","com/qa/cyborgAutomation"}
 ,plugin = {"pretty", "html:target/cucumber"}
 , tags ={"@web"}
 )

@@ -1,0 +1,6 @@
+com/qa/stepdefinitions/sdef_common.class
+com/qa/cyborgAutomation/testCommands.class
+com/qa/cyborgAutomation/cucumberTNGhelper.class
+com/qa/runner/testRunner.class
+com/frameworkBuilder/utils/propertyHandler.class
+com/qa/cyborgAutomation/initializer.class
