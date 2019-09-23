@@ -10,7 +10,7 @@ import io.cucumber.java.Before;
 
 public class cucumberTNGhelper extends initializer{
 	
-	private static WebDriver driver;
+	private WebDriver driver;
 	
 	public cucumberTNGhelper() {
 		this.driver = super.getDriver();
@@ -26,7 +26,7 @@ public class cucumberTNGhelper extends initializer{
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//super.setDriver(driver);
+		super.setDriver(driver);
 	}
 	
 	
