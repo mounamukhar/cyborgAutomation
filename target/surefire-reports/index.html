@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression" class="navigator-link">
-              <span class="suite-name border-passed">Regression</span>
+              <span class="suite-name border-failed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">runScenario("", "Amazon website test")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Facebook log in test&quot;, &quot;Title of your feature&quot;)">runScenario("Facebook log in test", "Title of your feature")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">runScenario("", "Amazon website test")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -112,12 +126,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">runScenario("", "Amazon website test")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">runScenario("", "Amazon website test")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="com.qa.runner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Facebook log in test&quot;, &quot;Title of your feature&quot;)">runScenario("Facebook log in test", "Title of your feature")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +146,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.runner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">
+                  </a> <!-- runScenario("", "Amazon website test") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("", "Amazon website test")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MounamukharsMBP.fios-router.home&apos;, ip: &apos;fe80:0:0:0:10c2:2656:4a58:3b46%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: /var/folders/z8/xff0jmgn6js...}, goog:chromeOptions: {debuggerAddress: localhost:51769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1edcf23685c1124b2405ddd6cc9233c1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.qa.stepdefinitions.sdef_amazonSearch.i_search_for_as_a_product(sdef_amazonSearch.java:30)
+	at ✽.I search for &quot;B07TWFW&quot; as a product(file:src/test/java/com/qa/features/amazonSearch.feature:27)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,10 +192,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Facebook log in test&quot;, &quot;Title of your feature&quot;)">
-                  </a> <!-- runScenario("Facebook log in test", "Title of your feature") -->
+                  <a name="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">
+                  </a> <!-- runScenario("", "Amazon website test") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Facebook log in test", "Title of your feature")</span>
+                  <span class="parameters">("", "Amazon website test")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -165,20 +212,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">
-                  </a> <!-- runScenario("", "Amazon website test") -->
+                  <a name="runScenario(&quot;Facebook log in test&quot;, &quot;Title of your feature&quot;)">
+                  </a> <!-- runScenario("Facebook log in test", "Title of your feature") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("", "Amazon website test")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;&quot;, &quot;Amazon website test&quot;)">
-                  </a> <!-- runScenario("", "Amazon website test") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("", "Amazon website test")</span>
+                  <span class="parameters">("Facebook log in test", "Title of your feature")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -259,28 +296,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.qa.runner.testRunner')
-data.setCell(0, 3, 22246);
+data.setCell(0, 3, 19591);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.qa.runner.testRunner')
-data.setCell(1, 3, 19485);
+data.setCell(1, 3, 10666);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.qa.runner.testRunner')
-data.setCell(2, 3, 15554);
+data.setCell(2, 3, 10639);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.qa.runner.testRunner')
-data.setCell(3, 3, 14513);
+data.setCell(3, 3, 10381);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.qa.runner.testRunner')
-data.setCell(4, 3, 6508);
+data.setCell(4, 3, 5718);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -311,29 +348,35 @@ return data;
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startExecution</span>
+                <span class="method-start">206 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("", "Amazon website test")</span>
-                <span class="method-start">201 ms</span>
+                <span class="method-start">268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("", "Amazon website test")</span>
-                <span class="method-start">202 ms</span>
+                <span class="method-start">268 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("", "Amazon website test")</span>
-                <span class="method-start">14721 ms</span>
+                <span class="method-start">10710 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Facebook log in test", "Title of your feature")</span>
-                <span class="method-start">15756 ms</span>
+                <span class="method-start">10935 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Title of your scenario", "Title of your feature")</span>
-                <span class="method-start">34208 ms</span>
+                <span class="method-start">21349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">40718 ms</span>
+                <span class="method-start">30529 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

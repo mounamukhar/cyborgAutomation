@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Window(failed)">
+<suite thread-count="2" data-provider-thread-count="2" name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="Window(failed)">
     <classes>
       <class name="com.qa.runner.testRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="startExecution"/>
           <include name="tearDownClass"/>
+          <include name="endExecution"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- com.qa.runner.testRunner -->

@@ -1,6 +1,6 @@
 package com.qa.cyborgAutomation;
 
-import com.frameworkBuilder.utils.propertyHandler;
+import com.frameworkBuilder.utils.propertyDealer;
 
 public class testCommands extends initializer{
 	
@@ -9,7 +9,7 @@ public class testCommands extends initializer{
      */
     public testCommands() {
         super();
-        propertyHandler propHandler = new propertyHandler("runtime.properties");
+        propertyDealer propHandler = new propertyDealer("runtime.properties");
 //        retryInterval =
 //                Integer.parseInt(propHandler
 //                        .getRuntimeProperty("RETRY_INTERVAL"));
