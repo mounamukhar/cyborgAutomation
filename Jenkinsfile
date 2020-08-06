@@ -9,10 +9,12 @@ pipeline {
             }
         }
         stage("build & SonarQube analysis") {
-            def scannerHome =  tool 'sonarDemoScanner';
-            withSonarQubeEnv('SonarDemoServer'){
-              sh "${scannerHome}/bin/sonar-scanner -Dsonar.sonar.java.binaries=target/test-classes/com " +
-              "-Dsonar.projectKey=sonarDemoFromJenkins"
+            steps {
+              def scannerHome =  tool 'sonarDemoScanner';
+              withSonarQubeEnv('SonarDemoServer'){
+                sh "${scannerHome}/bin/sonar-scanner -Dsonar.sonar.java.binaries=target/test-classes/com " +
+                "-Dsonar.projectKey=sonarDemoFromJenkins"
+                }
             }
           }
         stage('Test') {
