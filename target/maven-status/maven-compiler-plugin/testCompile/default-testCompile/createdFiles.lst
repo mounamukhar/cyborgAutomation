@@ -1,9 +1,9 @@
 com/qa/stepdefinitions/sdef_common.class
 com/qa/cyborgAutomation/testCommands.class
 com/qa/pageObjects/pg_Amzn_Home.class
-com/frameworkBuilder/utils/propertyHandler.class
 com/qa/stepdefinitions/sdef_amazonSearch.class
 com/qa/pageObjects/pg_FB_Home.class
+com/frameworkBuilder/utils/propertyDealer.class
 com/qa/cyborgAutomation/cucumberTNGhelper.class
 com/qa/runner/testRunner.class
 com/qa/cyborgAutomation/initializer.class

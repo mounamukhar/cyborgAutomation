@@ -29,10 +29,13 @@ public class cucumberTNGhelper extends initializer{
 	
 	private WebDriver driver;
 	
+	private testCommands userAction = new testCommands();
+	
 	private Scenario currentScenario;
 	
 	public cucumberTNGhelper() {
 		this.driver = super.getDriver();
+		this.userAction = super.gettestCommands();
 	}
 	
 	//@Before(value="@web", order=0)
@@ -59,6 +62,7 @@ public class cucumberTNGhelper extends initializer{
 //		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		super.setDriver(driver);
+		super.settestCommands(userAction);
 	}
 	
 	

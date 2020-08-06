@@ -20,6 +20,8 @@ public class initializer {
     
     /** The webdriver */
     private static WebDriver driver = null;
+    
+    private static testCommands userAction = null;
 
     /** The string that contains execution browser name. */
     private static String browserString;
@@ -62,6 +64,16 @@ public class initializer {
     public final void setDriver(final WebDriver driverObj) {
         this.driver = driverObj;
     }
+    
+    public final static testCommands gettestCommands() {
+        return userAction;
+    }
+    
+    public final void settestCommands(final testCommands tstCmm) {
+        this.userAction = tstCmm;
+    }
+    
+    
     
     /**
      * Sets the default profile.

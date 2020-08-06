@@ -22,7 +22,7 @@ public class testRunner extends AbstractTestNGCucumberTests{
 	private cucumberTNGhelper testNGClass = new cucumberTNGhelper();
 	
 	@Override
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }

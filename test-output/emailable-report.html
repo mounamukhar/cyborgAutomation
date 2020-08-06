@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Regression</th></tr>
-<tr><td><a href="#t0">Window</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,356</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Window</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,013</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Window &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.runner.testRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1569707277293</td><td rowspan="1">19658</td></tr><tr><th colspan="4">Window &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.runner.testRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="4">1569707296957</td><td rowspan="4">24173</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Window &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.runner.testRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1569765005221</td><td rowspan="1">19360</td></tr><tr><th colspan="4">Window &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.runner.testRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="4">1569765024195</td><td rowspan="4">15699</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr></tbody>
 </table>
 <h2>Window</h2><h3 id="m0">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>&quot;Amazon website test&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(@class,&apos;a-size-medium&apos;)]&quot;}
   (Session info: chrome=77.0.3865.90)
@@ -19,8 +19,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MounamukharsMBP.fios-router.home&apos;, ip: &apos;fe80:0:0:0:10c2:2656:4a58:3b46%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;12.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: /var/folders/z8/xff0jmgn6js...}, goog:chromeOptions: {debuggerAddress: localhost:64537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7d3ed80dcc4ad0bfe271289f0e854c8e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: /var/folders/z8/xff0jmgn6js...}, goog:chromeOptions: {debuggerAddress: localhost:50563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e9d8328dd561a1ba126f286dd934b09e
 *** Element info: {Using=xpath, value=//span[contains(@class,&apos;a-size-medium&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -33,11 +33,11 @@ Session ID: 7d3ed80dcc4ad0bfe271289f0e854c8e
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.qa.pageObjects.pg_Amzn_Home.txt_ProdTitle(pg_Amzn_Home.java:15)
-	at com.qa.stepdefinitions.sdef_amazonSearch.i_verify_result_displayed_in_step(sdef_amazonSearch.java:36)
+	at com.qa.stepdefinitions.sdef_amazonSearch.i_verify_result_displayed_in_step(sdef_amazonSearch.java:47)
 	at ✽.I verify result displayed &quot;Success&quot; in step(file:src/test/java/com/qa/features/amazonSearch.feature:28)
 ... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Facebook log in test&quot;</td><td>&quot;Title of your feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>&quot;Amazon website test&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>&quot;Amazon website test&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Facebook log in test&quot;</td><td>&quot;Title of your feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Title of your scenario&quot;</td><td>&quot;Title of your feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">com.qa.runner.testRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>&quot;Amazon website test&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
