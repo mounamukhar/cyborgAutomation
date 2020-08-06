@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class propertyHandler {
+public class propertyDealer {
 	/** The property file name. */
     private String propertyFileName;
 
@@ -20,7 +20,7 @@ public class propertyHandler {
      * @param propertyFile
      *            the property file
      */
-    public propertyHandler(final String propertyFile) {
+    public propertyDealer(final String propertyFile) {
         initLocations(propertyFile);
     }
 

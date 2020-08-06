@@ -5,7 +5,8 @@
     <classes>
       <class name="com.qa.runner.testRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="4 0"/>
+          <include name="startExecution"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>

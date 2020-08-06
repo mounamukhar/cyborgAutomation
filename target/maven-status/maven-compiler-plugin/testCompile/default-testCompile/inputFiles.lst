@@ -1,6 +1,9 @@
 /Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/cyborgAutomation/initializer.java
+/Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/pageObjects/pg_FB_Home.java
+/Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/stepdefinitions/sdef_amazonSearch.java
+/Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/frameworkBuilder/utils/propertyDealer.java
+/Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/pageObjects/pg_Amzn_Home.java
 /Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/cyborgAutomation/cucumberTNGhelper.java
 /Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/runner/testRunner.java
-/Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/frameworkBuilder/utils/propertyHandler.java
 /Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/stepdefinitions/sdef_common.java
 /Users/mounamukhargoswami/Coding/Workspace/cyborgAutomation/src/test/java/com/qa/cyborgAutomation/testCommands.java
