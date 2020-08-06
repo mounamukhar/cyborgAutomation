@@ -10,10 +10,8 @@ pipeline {
         }
         stage("SonarQube analysis") {
           steps {
-            def scannerHome =  tool 'sonarDemoScanner';
-            withSonarQubeEnv('SonarDemoServer'){
-            sh "${scannerHome}/bin/sonar-scanner -Dsonar.sonar.java.binaries=target/test-classes/com " +
-            "-Dsonar.projectKey=sonarDemoFromJenkins"
+            withSonarQubeEnv('My SonarQube Server') {
+              sh 'mvn clean package sonar:sonar'
             }
           }
         }
