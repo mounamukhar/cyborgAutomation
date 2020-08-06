@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+        maven 'mavenAutomatic'
+    }
     stages {
         stage('SCM') {
             steps {
@@ -10,9 +12,9 @@ pipeline {
         }
         stage("SonarQube analysis") {
           steps {
-            withSonarQubeEnv('SonarDemoServer') {
-              sh 'mvn clean package sonar:sonar'
-            }
+             withSonarQubeEnv('SonarDemoServer') {
+                sh 'mvn clean package sonar:sonar'
+             }
           }
         }
         stage('Test') {
